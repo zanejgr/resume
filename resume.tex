@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.3, 10 May 2020) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and academicons fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{altacv}
+\usepackage{paracol}
+\usepackage{geometry}
+\usepackage{academicicons}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% If using pdflatex:
+% If using xelatex or lualatex:
+
+\setmainfont{Roboto Slab}
+
+\setsansfont{Lato}
+
+\renewcommand{\familydefault}{\sfdefault}
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelBlue}{HTML}{7EA4B3}
+\definecolor{PastelBlue}{HTML}{AEC6CF}
+\definecolor{GoldenEarth}{HTML}{9EBBC6}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelBlue}
+\colorlet{heading}{DarkPastelBlue}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelBlue}
+\colorlet{accent}{PastelBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+	\renewcommand{\ratingmarker}{\faCircle}
+
+
+	\begin{document}
+	\name{Zane Gray}
+	\tagline{Junior Developer}
+	%% You can add multiple photos on the left or right
+	% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+	\personalinfo{%
+		% Not all of these are required!
+		\email{zanejgr@gmail.com}
+		\phone{405-626-2535}
+		\mailaddress{1415 George Ave Apt. 111, Norman OK, 73072}
+		\linkedin{linkedin.com/in/zane-gray-a4569a146}
+		\github{github.com/zanejgr}
+		%% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+		% \orcid{0000-0000-0000-0000}
+		%% You can add your own arbtrary detail with
+		%% \printinfo{symbol}{detail}[optional hyperlink prefix]
+		% \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+		%% Or you can declare your own field with
+		%% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+		% \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+		% \gitlab{your_id}
+		}
+
+		\makecvheader
+		%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+		% \AtBeginEnvironment{itemize}{\small}
+
+		%% Set the left/right column width ratio to 6:4.
+		\columnratio{0.6}
+
+		% Start a 2-column paracol. Both the left and right columns will automatically
+		% break across pages if things get too long.
+		\begin{paracol}{2}
+
+		
+			\cvsection{Strengths}
+			\cvtag{Hard-working}
+			\cvtag{Eye for detail}
+			\cvtag{Adept and versitile}
+
+			\cvsection{Programming Languages}
+			\cvtag{C++}
+			\cvtag{CSS}
+			\cvtag{C}
+			\cvtag{HTML}
+			\cvtag{JavaScript}
+			\cvtag{Java}
+			\cvtag{JQ}
+			\cvtag{\LaTeX}
+			\cvtag{Perl}
+			\cvtag{Powershell}
+			\cvtag{Python}
+			\cvtag{R}
+			\cvtag{Sage}
+			\cvtag{Scheme}
+			\cvtag{Sed}
+			\cvtag{SQL}
+
+			\cvsection{Experience}
+			\cvevent{Programmer Analyst}{Sam Noble Museum of Natural History}{June 2019 - June 2020}{}
+			\begin{itemize}
+				\item Create new web applications and services to meet requirements gathered from various scientists
+				\item Met changing needs of the organization by independently creating and modifying SQL queries and proceedures
+				\item Adopt best practices within existing ASP.NET applications
+			\end{itemize}
+			\divider
+			\cvevent{Delivery Driver}{Domino's}{April 2017 - July 2019}{}
+			\begin{itemize}
+				\item Answer questions about itemss on the menu
+				\item Transport products to different locations during different weather conditions in a timely manner
+				\item Recieve and process cash and card payments
+			\end{itemize}
+			\divider
+			\cvevent{Customer Service Representative}{Goodwill}{December 2016 - October 2017}{}
+			\begin{itemize}
+				\item Assist customers in finding a product fto fill their needs
+				\item Elevate challenges and issues to managementRecieve and process cash and card payments
+				\item Organize and appraise wares
+			\end{itemize}
+			\divider
+			\cvevent{Kitchen Staff}{Raising Cane's}{December 2016 - October 2017}{}
+			\begin{itemize}
+				\item Interpret, read and fulfill customer orders
+				\item Conserved resources by preparing “just enough, just in time" materials to match the flow of business
+				\item Maintain a clean and organized workspace
+				\item Represent the spirit of the company culture
+			\end{itemize}
+			%% Yeah I didn't spend too much time making all the
+			%% spacing consistent... sorry. Use \smallskip, \medskip,
+			%% \bigskip, \vpsace etc to make ajustments.
+			\medskip
+
+			\switchcolumn
+
+			\cvsection{technical skills}
+			\cvtag{.Net Framework \& ASP.Net Core}
+			\cvtag{AJAX}
+			\cvtag{Agile Methodology}
+			\cvtag{Amazon AWS}
+			\cvtag{Tomcat}
+			\cvtag{Bootstrap.css}
+			\cvtag{Docker}
+			\cvtag{Git}
+			\cvtag{Google Cloud}
+			\cvtag{Gradle}
+			\cvtag{JSP}
+			\cvtag{Linux}
+			\cvtag{MDBuild}
+			\cvtag{Make}
+			\cvtag{Maven}
+			\cvtag{Microsoft Azure}
+			\cvtag{NPM}
+			\cvtag{OpenGl}
+			\cvtag{Pip}
+			\cvtag{QT}
+			\cvtag{RESTful API development}
+			\cvtag{React Framework}
+			\cvtag{Regular Expressions}
+			
+			\cvsection{projects}
+			\cvevent{Senior Capstone}{University of Oklahoma}{September 2019 -- May 2020}{}
+			Created a reservation system for the school's Engineering Practice Facility using a React.js frontend and a .Net Core backend
+
+			\smallskip
+			\divider
+			
+			\cvevent{SNOMNH Collections}{Sam Noble Museum of Natural History}{December 2019 -- June 2020}{}
+			Engineered a loosely-coupled database search function in Asp.Net Core for the museum's collections such that schema changes don't break the website
+
+			%% Switch to the right column. This will now automatically move to the second
+			%% page if the content is too long.
+
+			\bigskip
+			\cvsection{Most Proud of}
+			\medskip
+
+			\cvachievement{\faTrophy}{Eagle Scout Award}{Earned 2013}
+
+			\divider
+
+			\cvachievement{\faTrophy}{Employee of the Month}{Raising Cane's}
+
+			\divider
+
+			\cvachievement{\faHeartbeat}{Lead Programmer for BEST Robotics Competition team}
+
+			\divider
+
+			\cvachievement{\faHeartbeat}{Appointed Membership Assistant}{Alpha Phi Omega}
+
+			\divider
+
+			\cvachievement{\faHeartbeat}{Volunteered with several charities}{Center for Children and Families, Inc and the HUGS project, among others}
+
+			\divider
+
+\bigskip
+
+			\cvsection{Education}
+
+			\cvevent{B.Sc. in Computer Science}{University of Oklahoma}{2016 -- 2020}{}
+			Relevant courses include Data Structures, Algorithm Analysis, and Applied Statistical Methods
+
+			\divider
+
+			\cvevent{A.Sc. in Computer Science}{Oklahoma City Community College}{2013 -- 2016}{}
+
+\end{paracol}
+
+	\end{document}
